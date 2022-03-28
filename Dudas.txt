@@ -1,8 +1,40 @@
+------------------------------------------------------------------------
+¿Es necesario crear formularios de acceso y almacenar las credenciales?
+------------------------------------------------------------------------
+
+-------------------------------------
+Atributo "Marca" en tabla "Empresa"
+Localizacion --> (Tabla "Empresa" FCT)
+-------------------------------------
+
+---------------------------------------------------
+Atributo "OrganismoPublico" en tabla "Empresa"
+Localizacion --> (Tabla "Empresa" FCT)
+---------------------------------------------------
+
+------------------------
+Tabla Datos EFA
+------------------------
+
+---------------------------------------------------
+Atributo "Publica" en tabla "Practica"
+Localizacion --> (Tabla "PracticasAlumnos" FCT)
+---------------------------------------------------
+
 ------------------
 Tabla Alumnos
 ID --> DNI
 ------------------
 
-----------------------
-Formulario de Acceso
-----------------------
+--------------------
+Tabla Empresa
+ID --> CIF Empresa
+--------------------
+
+------------------
+Tabla Curso
+Atributo --> FAMILIA
+Atributo --> AREA
+------------------
+
+

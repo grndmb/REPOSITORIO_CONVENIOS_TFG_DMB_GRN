@@ -37,4 +37,7 @@ Atributo --> FAMILIA
 Atributo --> AREA
 ------------------
 
-
+------------------
+Actualizacion platillas
+Anexos
+------------------

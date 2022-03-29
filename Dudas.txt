@@ -5,6 +5,7 @@
 -------------------------------------
 Atributo "Marca" en tabla "Empresa"
 Localizacion --> (Tabla "Empresa" FCT)
+QUITAR
 -------------------------------------
 
 ---------------------------------------------------
@@ -29,15 +30,24 @@ ID --> DNI
 --------------------
 Tabla Empresa
 ID --> CIF Empresa
+(CREAR TABLA CONVENIO )
+QUITAR NUMERO CONVENUD
 --------------------
 
 ------------------
 Tabla Curso
 Atributo --> FAMILIA
 Atributo --> AREA
+QUITAR
 ------------------
 
 ------------------
 Actualizacion platillas
 Anexos
 ------------------
+
+
+
+
+QUITAR SECTOR EMPRESA
+

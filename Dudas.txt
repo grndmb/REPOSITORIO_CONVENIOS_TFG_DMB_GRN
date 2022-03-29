@@ -41,3 +41,8 @@ Atributo --> AREA
 Actualizacion platillas
 Anexos
 ------------------
+
+-------------------------------------------------------
+Tabla Convenios
+Relacion idEMpresa, NºConvenio, idPracticas, idAlumno
+-------------------------------------------------------

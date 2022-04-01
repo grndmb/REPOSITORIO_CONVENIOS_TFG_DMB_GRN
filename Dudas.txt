@@ -1,6 +1,4 @@
-------------------------------------------------------------------------
-¿Es necesario crear formularios de acceso y almacenar las credenciales?
-------------------------------------------------------------------------
+
 
 -------------------------------------
 Atributo "Marca" en tabla "Empresa"
@@ -45,9 +43,7 @@ QUITAR
 Actualizacion platillas
 Anexos
 ------------------
+-----------------------------------------------
 
 
-
-
-QUITAR SECTOR EMPRESA
 

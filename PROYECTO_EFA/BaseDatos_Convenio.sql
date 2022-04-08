@@ -1,7 +1,31 @@
 -- -----------------------------------
+DROP DATABASE BASE_DATOS_CONVENIO;
 CREATE DATABASE BASE_DATOS_CONVENIO;
 USE BASE_DATOS_CONVENIO;
 -- -----------------------------------
+
+-- ----------------------
+-- TABLA DATOS EFA
+-- ----------------------
+CREATE TABLE DATOS_EFA (
+NOMBRE VARCHAR (20) NOT NULL,
+DIRECCION VARCHAR (100) NOT NULL,
+CODIGO_POSTAL INT (5) NOT NULL,
+TELEFONO INT NOT NULL,
+FAX INT NOT NULL, 
+PAGINA_WEB VARCHAR (500) NOT NULL
+) COMMENT 'Tabla con la informacion de EFA MORATALAZ' ;
+-- --------------------------------------------------------
+
+-- ------------------------
+-- TABLA POBLACION
+-- ------------------------
+CREATE TABLE POBLACION (
+CODIGO_POSTAL INT (5) NOT NULL COMMENT 'Codigo postal',
+NOMBRE VARCHAR (50) NOT NULL,
+PROVINCIA VARCHAR (50) NOT NULL,
+CONSTRAINT PK_POBLACION PRIMARY KEY (CODIGO_POSTAL)
+);
 
 -- ------------------
 -- TABLA CURSO
@@ -18,6 +42,26 @@ CONSTRAINT PK_CURSO PRIMARY KEY (NOMBRE_CURSO)
 ) COMMENT 'Tabla con la informacion de curso';
 -- -------------------------------------------------------------------------------
 
+-- ----------------
+-- TABLA ALUMNO
+-- ----------------
+CREATE TABLE ALUMNO (
+NIF VARCHAR (9) NOT NULL COMMENT 'NIF del alumno',
+NOMBRE_COMPLETO VARCHAR (60) NOT NULL COMMENT 'Nombre completo del alumno',
+SELECCIONADO BOOLEAN NOT NULL COMMENT 'True o False',
+TELEFONO INT NOT NULL COMMENT 'Telefono del alumno',
+CORREO VARCHAR(100) NOT NULL COMMENT 'Correo del alumno',
+FECHA_NACIMIENTO DATE NOT NULL COMMENT 'Fecha de nacimiento del alumno',
+
+ID_PRACTICA INT NOT NULL COMMENT 'Identificador de las practicas',
+NOMBRE_CURSO INT NOT NULL COMMENT 'Identificador del curso',
+CODIGO_POSTAL INT NOT NULL COMMENT 'Codigo postal de la poblacion',
+
+CONSTRAINT PK_ALUMNO PRIMARY KEY (NIF),
+CONSTRAINT FK_ALUMNO_NOMBRE_CURSO FOREIGN KEY (NOMBRE_CURSO) REFERENCES CURSO (NOMBRE_CURSO),
+CONSTRAINT FK_ALUMNO_CODIGO_POSTAL FOREIGN KEY (CODIGO_POSTAL) REFERENCES POBLACION (CODIGO_POSTAL)
+) COMMENT 'Tabla con la informacion del alumno';
+-- -----------------------------------------------------------------------------------------------------
 
 -- -----------------------
 -- TABLA PROFESOR
@@ -80,25 +124,16 @@ CONSTRAINT FK_EMPRESA_CODIGO_POSTAL FOREIGN KEY (CODIGO_POSTAL) REFERENCES POBLA
 ) COMMENT 'Tabla con la informacion de la empresa';
 -- -----------------------------------------------------------------------------------------------------
 
--- ----------------
--- TABLA ALUMNO
--- ----------------
-CREATE TABLE ALUMNO (
-NIF VARCHAR (9) NOT NULL COMMENT 'NIF del alumno',
-NOMBRE_COMPLETO VARCHAR (60) NOT NULL COMMENT 'Nombre completo del alumno',
-SELECCIONADO BOOLEAN NOT NULL COMMENT 'True o False',
-TELEFONO INT NOT NULL COMMENT 'Telefono del alumno',
-CORREO VARCHAR(100) NOT NULL COMMENT 'Correo del alumno',
-FECHA_NACIMIENTO DATE NOT NULL COMMENT 'Fecha de nacimiento del alumno',
+-- ------------------------
+-- TABLA CONVENIO
+-- ------------------------
+CREATE TABLE CONVENIO (
+ID_CONVENIO VARCHAR (20) NOT NULL COMMENT 'Identificador del convenio',
+ID_EMPRESA INT NOT NULL COMMENT 'Identificador de la empresa',
 
-ID_PRACTICA INT NOT NULL COMMENT 'Identificador de las practicas',
-NOMBRE_CURSO INT NOT NULL COMMENT 'Identificador del curso',
-CODIGO_POSTAL INT NOT NULL COMMENT 'Codigo postal de la poblacion',
+CONSTRAINT PK_CONVENIO PRIMARY KEY (ID_CONVENIO),
+CONSTRAINT FK_CONVENIO_ID_EMPRESA FOREIGN KEY (ID_EMPRESA) REFERENCES EMPRESA (ID_EMPRESA)
+) COMMENT 'Tabla con la informacion del convenio';
+-- ---------------------------------------
 
-CONSTRAINT PK_ALUMNO PRIMARY KEY (NIF),
-CONSTRAINT FK_ALUMNO_ID_PRACTICA FOREIGN KEY (ID_PRACTICA) REFERENCES PRACTICA (ID_PRACTICA),
-CONSTRAINT FK_ALUMNO_NOMBRE_CURSO FOREIGN KEY (NOMBRE_CURSO) REFERENCES CURSO (NOMBRE_CURSO),
-CONSTRAINT FK_ALUMNO_CODIGO_POSTAL FOREIGN KEY (CODIGO_POSTAL) REFERENCES POBLACION (CODIGO_POSTAL)
-) COMMENT 'Tabla con la informacion del alumno';
--- -----------------------------------------------------------------------------------------------------
 

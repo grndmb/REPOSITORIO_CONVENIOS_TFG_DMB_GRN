@@ -1,6 +1,7 @@
 package Controlador;
 
 public class Controlador {
-//Esto es el controlador
+	public static void main (String [] args) {
+		
+	}
 }
-//prueba commit guillermo

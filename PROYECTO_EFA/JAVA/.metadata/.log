@@ -60,3 +60,50 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.oomph.setup.ui 1 0 2022-04-18 13:29:31.075
 !MESSAGE Setup tasks were performed during startup updating 5 preferences.See 'C:\Users\david\eclipse\jee-2020-092\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.egit.core 4 0 2022-04-18 13:40:38.138
+!MESSAGE Pulling 1 repository
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2022-04-18 13:40:38.138
+!MESSAGE Checkout conflict with files: 
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:419)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
+	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:502)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:467)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:288)
+	... 3 more
+
+!ENTRY org.eclipse.egit.core 4 0 2022-04-18 13:40:52.090
+!MESSAGE Pulling 1 repository
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2022-04-18 13:40:52.090
+!MESSAGE Checkout conflict with files: 
+PROYECTO_EFA/JAVA/.metadata/.log
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+PROYECTO_EFA/JAVA/.metadata/.log
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:419)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
+	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+PROYECTO_EFA/JAVA/.metadata/.log
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:502)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:467)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:288)
+	... 3 more

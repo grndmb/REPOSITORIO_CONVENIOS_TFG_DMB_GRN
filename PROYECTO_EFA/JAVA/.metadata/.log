@@ -3028,3 +3028,177 @@ java.lang.Error: SWT Resource was not properly disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:54:31.234
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:54:32.665
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:54:50.266
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:55:11.901
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:55:13.437
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:55:19.656
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:55:25.385
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:55:29.323
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:55:33.919
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:55:36.018
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:56:19.215
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:56:44.781
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:56:46.114
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2022-04-18 16:57:15.159
+!MESSAGE Could not determine Java version for location C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\jdk1.8.0_261.
+!SESSION 2022-04-18 16:57:32.580 -----------------------------------------------
+eclipse.buildId=4.21.0.I20210906-0500
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-04-18 16:57:38.486
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-18 16:57:38.486
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7f219e84,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42eaf47f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-18 16:57:38.486
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@312e8eaf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c960f64,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-04-18 16:57:46.038
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-04-18 16:57:46.040
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-18 16:57:46.050
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\david'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2022-04-18 17:00:38.741
+!MESSAGE Could not acquire INavigatorContentService: Project Explorer not found.
+!SESSION 2022-04-18 17:03:44.608 -----------------------------------------------
+eclipse.buildId=4.21.0.I20210906-0500
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-04-18 17:03:50.224
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-18 17:03:50.224
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10ab976b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5da799,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-18 17:03:50.225
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b0d6bf2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@a15e3c1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-18 17:03:57.338
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\david'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-04-18 17:04:15.589
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-04-18 17:04:15.590
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-04-18 17:18:04.460
+!MESSAGE An internal error occurred during: "Launching TFG_Convenios".
+!STACK 0
+java.lang.IllegalStateException: Direct launch not supported
+	at org.hibernate.eclipse.launch.ConsoleConfigurationLaunchDelegate.launch(ConsoleConfigurationLaunchDelegate.java:13)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

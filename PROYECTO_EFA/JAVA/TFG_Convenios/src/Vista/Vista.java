@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import javax.swing.border.LineBorder;
+import javax.swing.BoxLayout;
 
 public class Vista extends JFrame {
 
@@ -26,17 +29,19 @@ public class Vista extends JFrame {
 			}
 		});
 	}
-
+//viosta ver
 	/**
 	 * Create the frame.
 	 */
 	public Vista() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 873, 647);
 		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
+		contentPane.setBackground(new Color(51, 204, 153));
+		contentPane.setForeground(new Color(102, 255, 204));
+		contentPane.setBorder(new LineBorder(new Color(0, 0, 0), 5));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
 	}
 
 }

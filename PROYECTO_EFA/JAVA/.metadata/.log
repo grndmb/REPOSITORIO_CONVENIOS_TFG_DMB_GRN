@@ -1,4 +1,4 @@
-!SESSION 2022-04-18 13:29:17.538 -----------------------------------------------
+!SESSION 2022-04-18 13:52:21.204 -----------------------------------------------
 eclipse.buildId=4.21.0.I20210906-0500
 java.version=14.0.2
 java.vendor=Oracle Corporation
@@ -6,15 +6,15 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
 Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\david\OneDrive\Escritorio\ProyectoFinal\REPO_DATOS_PROYECTO\PROYECTO_EFA\JAVA -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.jface 2 0 2022-04-18 13:29:21.169
+!ENTRY org.eclipse.jface 2 0 2022-04-18 13:52:27.852
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-18 13:29:21.170
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-18 13:52:27.852
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@50b1dfab,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23657729,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -22,17 +22,17 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c85ed05,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@365291bd,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-18 13:29:21.170
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-18 13:52:27.852
 !MESSAGE A conflict occurred for ALT+SHIFT+R:
 Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
 		Rename the selected element,
 		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23657729,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68c05c5b,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -40,70 +40,37 @@ Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
 		Rename the selected item,
 		Category(org.eclipse.ui.category.file,File,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@365291bd,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1b5e6983,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY org.eclipse.ui.navigator 2 0 2022-04-18 13:29:23.719
+!ENTRY org.eclipse.ui.navigator 2 0 2022-04-18 13:52:33.457
 !MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
 
-!ENTRY org.eclipse.ui.navigator 2 0 2022-04-18 13:29:23.722
+!ENTRY org.eclipse.ui.navigator 2 0 2022-04-18 13:52:33.459
 !MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
 
-!ENTRY org.eclipse.egit.ui 2 0 2022-04-18 13:29:23.774
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-18 13:52:33.556
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\david'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.oomph.setup.ui 1 0 2022-04-18 13:29:31.075
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2022-04-18 13:52:43.384
 !MESSAGE Setup tasks were performed during startup updating 5 preferences.See 'C:\Users\david\eclipse\jee-2020-092\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
 
-!ENTRY org.eclipse.egit.core 4 0 2022-04-18 13:40:38.138
-!MESSAGE Pulling 1 repository
-!SUBENTRY 1 org.eclipse.egit.core 4 0 2022-04-18 13:40:38.138
-!MESSAGE Checkout conflict with files: 
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+!ENTRY org.eclipse.egit.ui 4 0 2022-04-18 13:53:42.184
+!MESSAGE El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
 !STACK 0
-org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
-	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:419)
-	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
-	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
+java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:224)
+	at org.eclipse.jgit.util.IO.readWholeStream(IO.java:169)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:418)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:404)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:617)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:200)
+	at org.eclipse.egit.ui.internal.staging.StagingView$54.run(StagingView.java:3651)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
-	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:502)
-	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:467)
-	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:288)
-	... 3 more
-
-!ENTRY org.eclipse.egit.core 4 0 2022-04-18 13:40:52.090
-!MESSAGE Pulling 1 repository
-!SUBENTRY 1 org.eclipse.egit.core 4 0 2022-04-18 13:40:52.090
-!MESSAGE Checkout conflict with files: 
-PROYECTO_EFA/JAVA/.metadata/.log
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
-!STACK 0
-org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
-PROYECTO_EFA/JAVA/.metadata/.log
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
-	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:419)
-	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:374)
-	at org.eclipse.egit.core.op.PullOperation$PullJob.run(PullOperation.java:256)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
-PROYECTO_EFA/JAVA/.metadata/.log
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
-PROYECTO_EFA/JAVA/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
-	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:502)
-	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:467)
-	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:288)
-	... 3 more

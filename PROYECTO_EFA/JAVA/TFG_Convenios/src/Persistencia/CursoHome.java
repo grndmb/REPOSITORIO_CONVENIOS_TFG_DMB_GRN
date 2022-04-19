@@ -1,4 +1,4 @@
-package persistencia;
+package Persistencia;
 // Generated 18 abr. 2022 17:19:32 by Hibernate Tools 5.4.32.Final
 
 import java.util.List;
@@ -10,13 +10,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Example;
 
 /**
- * Home object for domain model class DatosEfa.
- * @see persistencia.DatosEfa
+ * Home object for domain model class Curso.
+ * @see Persistencia.Curso
  * @author Hibernate Tools
  */
-public class DatosEfaHome {
+public class CursoHome {
 
-	private static final Logger logger = Logger.getLogger(DatosEfaHome.class.getName());
+	private static final Logger logger = Logger.getLogger(CursoHome.class.getName());
 
 	private final SessionFactory sessionFactory = getSessionFactory();
 
@@ -29,8 +29,8 @@ public class DatosEfaHome {
 		}
 	}
 
-	public void persist(DatosEfa transientInstance) {
-		logger.log(Level.INFO, "persisting DatosEfa instance");
+	public void persist(Curso transientInstance) {
+		logger.log(Level.INFO, "persisting Curso instance");
 		try {
 			sessionFactory.getCurrentSession().persist(transientInstance);
 			logger.log(Level.INFO, "persist successful");
@@ -40,8 +40,8 @@ public class DatosEfaHome {
 		}
 	}
 
-	public void attachDirty(DatosEfa instance) {
-		logger.log(Level.INFO, "attaching dirty DatosEfa instance");
+	public void attachDirty(Curso instance) {
+		logger.log(Level.INFO, "attaching dirty Curso instance");
 		try {
 			sessionFactory.getCurrentSession().saveOrUpdate(instance);
 			logger.log(Level.INFO, "attach successful");
@@ -51,8 +51,8 @@ public class DatosEfaHome {
 		}
 	}
 
-	public void attachClean(DatosEfa instance) {
-		logger.log(Level.INFO, "attaching clean DatosEfa instance");
+	public void attachClean(Curso instance) {
+		logger.log(Level.INFO, "attaching clean Curso instance");
 		try {
 			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
 			logger.log(Level.INFO, "attach successful");
@@ -62,8 +62,8 @@ public class DatosEfaHome {
 		}
 	}
 
-	public void delete(DatosEfa persistentInstance) {
-		logger.log(Level.INFO, "deleting DatosEfa instance");
+	public void delete(Curso persistentInstance) {
+		logger.log(Level.INFO, "deleting Curso instance");
 		try {
 			sessionFactory.getCurrentSession().delete(persistentInstance);
 			logger.log(Level.INFO, "delete successful");
@@ -73,10 +73,10 @@ public class DatosEfaHome {
 		}
 	}
 
-	public DatosEfa merge(DatosEfa detachedInstance) {
-		logger.log(Level.INFO, "merging DatosEfa instance");
+	public Curso merge(Curso detachedInstance) {
+		logger.log(Level.INFO, "merging Curso instance");
 		try {
-			DatosEfa result = (DatosEfa) sessionFactory.getCurrentSession().merge(detachedInstance);
+			Curso result = (Curso) sessionFactory.getCurrentSession().merge(detachedInstance);
 			logger.log(Level.INFO, "merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -85,10 +85,10 @@ public class DatosEfaHome {
 		}
 	}
 
-	public DatosEfa findById(persistencia.DatosEfaId id) {
-		logger.log(Level.INFO, "getting DatosEfa instance with id: " + id);
+	public Curso findById(java.lang.String id) {
+		logger.log(Level.INFO, "getting Curso instance with id: " + id);
 		try {
-			DatosEfa instance = (DatosEfa) sessionFactory.getCurrentSession().get("persistencia.DatosEfa", id);
+			Curso instance = (Curso) sessionFactory.getCurrentSession().get("persistencia.Curso", id);
 			if (instance == null) {
 				logger.log(Level.INFO, "get successful, no instance found");
 			} else {
@@ -101,10 +101,10 @@ public class DatosEfaHome {
 		}
 	}
 
-	public List findByExample(DatosEfa instance) {
-		logger.log(Level.INFO, "finding DatosEfa instance by example");
+	public List findByExample(Curso instance) {
+		logger.log(Level.INFO, "finding Curso instance by example");
 		try {
-			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.DatosEfa")
+			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.Curso")
 					.add(Example.create(instance)).list();
 			logger.log(Level.INFO, "find by example successful, result size: " + results.size());
 			return results;

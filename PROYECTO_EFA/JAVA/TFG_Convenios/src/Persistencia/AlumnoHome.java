@@ -1,4 +1,4 @@
-package persistencia;
+package Persistencia;
 // Generated 18 abr. 2022 17:19:32 by Hibernate Tools 5.4.32.Final
 
 import java.util.List;
@@ -10,13 +10,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Example;
 
 /**
- * Home object for domain model class Empresa.
- * @see persistencia.Empresa
+ * Home object for domain model class Alumno.
+ * @see Persistencia.Alumno
  * @author Hibernate Tools
  */
-public class EmpresaHome {
+public class AlumnoHome {
 
-	private static final Logger logger = Logger.getLogger(EmpresaHome.class.getName());
+	private static final Logger logger = Logger.getLogger(AlumnoHome.class.getName());
 
 	private final SessionFactory sessionFactory = getSessionFactory();
 
@@ -29,8 +29,8 @@ public class EmpresaHome {
 		}
 	}
 
-	public void persist(Empresa transientInstance) {
-		logger.log(Level.INFO, "persisting Empresa instance");
+	public void persist(Alumno transientInstance) {
+		logger.log(Level.INFO, "persisting Alumno instance");
 		try {
 			sessionFactory.getCurrentSession().persist(transientInstance);
 			logger.log(Level.INFO, "persist successful");
@@ -40,8 +40,8 @@ public class EmpresaHome {
 		}
 	}
 
-	public void attachDirty(Empresa instance) {
-		logger.log(Level.INFO, "attaching dirty Empresa instance");
+	public void attachDirty(Alumno instance) {
+		logger.log(Level.INFO, "attaching dirty Alumno instance");
 		try {
 			sessionFactory.getCurrentSession().saveOrUpdate(instance);
 			logger.log(Level.INFO, "attach successful");
@@ -51,8 +51,8 @@ public class EmpresaHome {
 		}
 	}
 
-	public void attachClean(Empresa instance) {
-		logger.log(Level.INFO, "attaching clean Empresa instance");
+	public void attachClean(Alumno instance) {
+		logger.log(Level.INFO, "attaching clean Alumno instance");
 		try {
 			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
 			logger.log(Level.INFO, "attach successful");
@@ -62,8 +62,8 @@ public class EmpresaHome {
 		}
 	}
 
-	public void delete(Empresa persistentInstance) {
-		logger.log(Level.INFO, "deleting Empresa instance");
+	public void delete(Alumno persistentInstance) {
+		logger.log(Level.INFO, "deleting Alumno instance");
 		try {
 			sessionFactory.getCurrentSession().delete(persistentInstance);
 			logger.log(Level.INFO, "delete successful");
@@ -73,10 +73,10 @@ public class EmpresaHome {
 		}
 	}
 
-	public Empresa merge(Empresa detachedInstance) {
-		logger.log(Level.INFO, "merging Empresa instance");
+	public Alumno merge(Alumno detachedInstance) {
+		logger.log(Level.INFO, "merging Alumno instance");
 		try {
-			Empresa result = (Empresa) sessionFactory.getCurrentSession().merge(detachedInstance);
+			Alumno result = (Alumno) sessionFactory.getCurrentSession().merge(detachedInstance);
 			logger.log(Level.INFO, "merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -85,10 +85,10 @@ public class EmpresaHome {
 		}
 	}
 
-	public Empresa findById(java.lang.String id) {
-		logger.log(Level.INFO, "getting Empresa instance with id: " + id);
+	public Alumno findById(java.lang.String id) {
+		logger.log(Level.INFO, "getting Alumno instance with id: " + id);
 		try {
-			Empresa instance = (Empresa) sessionFactory.getCurrentSession().get("persistencia.Empresa", id);
+			Alumno instance = (Alumno) sessionFactory.getCurrentSession().get("persistencia.Alumno", id);
 			if (instance == null) {
 				logger.log(Level.INFO, "get successful, no instance found");
 			} else {
@@ -101,10 +101,10 @@ public class EmpresaHome {
 		}
 	}
 
-	public List findByExample(Empresa instance) {
-		logger.log(Level.INFO, "finding Empresa instance by example");
+	public List findByExample(Alumno instance) {
+		logger.log(Level.INFO, "finding Alumno instance by example");
 		try {
-			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.Empresa")
+			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.Alumno")
 					.add(Example.create(instance)).list();
 			logger.log(Level.INFO, "find by example successful, result size: " + results.size());
 			return results;

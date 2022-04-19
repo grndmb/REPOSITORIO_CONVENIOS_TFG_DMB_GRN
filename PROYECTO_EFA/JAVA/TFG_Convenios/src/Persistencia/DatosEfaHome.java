@@ -1,4 +1,4 @@
-package persistencia;
+package Persistencia;
 // Generated 18 abr. 2022 17:19:32 by Hibernate Tools 5.4.32.Final
 
 import java.util.List;
@@ -10,13 +10,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Example;
 
 /**
- * Home object for domain model class Practica.
- * @see persistencia.Practica
+ * Home object for domain model class DatosEfa.
+ * @see Persistencia.DatosEfa
  * @author Hibernate Tools
  */
-public class PracticaHome {
+public class DatosEfaHome {
 
-	private static final Logger logger = Logger.getLogger(PracticaHome.class.getName());
+	private static final Logger logger = Logger.getLogger(DatosEfaHome.class.getName());
 
 	private final SessionFactory sessionFactory = getSessionFactory();
 
@@ -29,8 +29,8 @@ public class PracticaHome {
 		}
 	}
 
-	public void persist(Practica transientInstance) {
-		logger.log(Level.INFO, "persisting Practica instance");
+	public void persist(DatosEfa transientInstance) {
+		logger.log(Level.INFO, "persisting DatosEfa instance");
 		try {
 			sessionFactory.getCurrentSession().persist(transientInstance);
 			logger.log(Level.INFO, "persist successful");
@@ -40,8 +40,8 @@ public class PracticaHome {
 		}
 	}
 
-	public void attachDirty(Practica instance) {
-		logger.log(Level.INFO, "attaching dirty Practica instance");
+	public void attachDirty(DatosEfa instance) {
+		logger.log(Level.INFO, "attaching dirty DatosEfa instance");
 		try {
 			sessionFactory.getCurrentSession().saveOrUpdate(instance);
 			logger.log(Level.INFO, "attach successful");
@@ -51,8 +51,8 @@ public class PracticaHome {
 		}
 	}
 
-	public void attachClean(Practica instance) {
-		logger.log(Level.INFO, "attaching clean Practica instance");
+	public void attachClean(DatosEfa instance) {
+		logger.log(Level.INFO, "attaching clean DatosEfa instance");
 		try {
 			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
 			logger.log(Level.INFO, "attach successful");
@@ -62,8 +62,8 @@ public class PracticaHome {
 		}
 	}
 
-	public void delete(Practica persistentInstance) {
-		logger.log(Level.INFO, "deleting Practica instance");
+	public void delete(DatosEfa persistentInstance) {
+		logger.log(Level.INFO, "deleting DatosEfa instance");
 		try {
 			sessionFactory.getCurrentSession().delete(persistentInstance);
 			logger.log(Level.INFO, "delete successful");
@@ -73,10 +73,10 @@ public class PracticaHome {
 		}
 	}
 
-	public Practica merge(Practica detachedInstance) {
-		logger.log(Level.INFO, "merging Practica instance");
+	public DatosEfa merge(DatosEfa detachedInstance) {
+		logger.log(Level.INFO, "merging DatosEfa instance");
 		try {
-			Practica result = (Practica) sessionFactory.getCurrentSession().merge(detachedInstance);
+			DatosEfa result = (DatosEfa) sessionFactory.getCurrentSession().merge(detachedInstance);
 			logger.log(Level.INFO, "merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -85,10 +85,10 @@ public class PracticaHome {
 		}
 	}
 
-	public Practica findById(int id) {
-		logger.log(Level.INFO, "getting Practica instance with id: " + id);
+	public DatosEfa findById(Persistencia.DatosEfaId id) {
+		logger.log(Level.INFO, "getting DatosEfa instance with id: " + id);
 		try {
-			Practica instance = (Practica) sessionFactory.getCurrentSession().get("persistencia.Practica", id);
+			DatosEfa instance = (DatosEfa) sessionFactory.getCurrentSession().get("persistencia.DatosEfa", id);
 			if (instance == null) {
 				logger.log(Level.INFO, "get successful, no instance found");
 			} else {
@@ -101,10 +101,10 @@ public class PracticaHome {
 		}
 	}
 
-	public List findByExample(Practica instance) {
-		logger.log(Level.INFO, "finding Practica instance by example");
+	public List findByExample(DatosEfa instance) {
+		logger.log(Level.INFO, "finding DatosEfa instance by example");
 		try {
-			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.Practica")
+			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.DatosEfa")
 					.add(Example.create(instance)).list();
 			logger.log(Level.INFO, "find by example successful, result size: " + results.size());
 			return results;

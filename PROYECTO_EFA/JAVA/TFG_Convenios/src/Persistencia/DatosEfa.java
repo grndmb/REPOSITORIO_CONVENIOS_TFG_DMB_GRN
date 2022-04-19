@@ -1,4 +1,4 @@
-package persistencia;
+package Persistencia;
 // Generated 18 abr. 2022 17:19:26 by Hibernate Tools 5.4.32.Final
 
 /**

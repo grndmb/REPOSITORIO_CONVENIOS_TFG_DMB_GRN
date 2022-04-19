@@ -1,4 +1,4 @@
-package persistencia;
+package Persistencia;
 // Generated 18 abr. 2022 17:19:32 by Hibernate Tools 5.4.32.Final
 
 import java.util.List;
@@ -10,13 +10,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Example;
 
 /**
- * Home object for domain model class Anexar.
- * @see persistencia.Anexar
+ * Home object for domain model class Convenio.
+ * @see Persistencia.Convenio
  * @author Hibernate Tools
  */
-public class AnexarHome {
+public class ConvenioHome {
 
-	private static final Logger logger = Logger.getLogger(AnexarHome.class.getName());
+	private static final Logger logger = Logger.getLogger(ConvenioHome.class.getName());
 
 	private final SessionFactory sessionFactory = getSessionFactory();
 
@@ -29,8 +29,8 @@ public class AnexarHome {
 		}
 	}
 
-	public void persist(Anexar transientInstance) {
-		logger.log(Level.INFO, "persisting Anexar instance");
+	public void persist(Convenio transientInstance) {
+		logger.log(Level.INFO, "persisting Convenio instance");
 		try {
 			sessionFactory.getCurrentSession().persist(transientInstance);
 			logger.log(Level.INFO, "persist successful");
@@ -40,8 +40,8 @@ public class AnexarHome {
 		}
 	}
 
-	public void attachDirty(Anexar instance) {
-		logger.log(Level.INFO, "attaching dirty Anexar instance");
+	public void attachDirty(Convenio instance) {
+		logger.log(Level.INFO, "attaching dirty Convenio instance");
 		try {
 			sessionFactory.getCurrentSession().saveOrUpdate(instance);
 			logger.log(Level.INFO, "attach successful");
@@ -51,8 +51,8 @@ public class AnexarHome {
 		}
 	}
 
-	public void attachClean(Anexar instance) {
-		logger.log(Level.INFO, "attaching clean Anexar instance");
+	public void attachClean(Convenio instance) {
+		logger.log(Level.INFO, "attaching clean Convenio instance");
 		try {
 			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
 			logger.log(Level.INFO, "attach successful");
@@ -62,8 +62,8 @@ public class AnexarHome {
 		}
 	}
 
-	public void delete(Anexar persistentInstance) {
-		logger.log(Level.INFO, "deleting Anexar instance");
+	public void delete(Convenio persistentInstance) {
+		logger.log(Level.INFO, "deleting Convenio instance");
 		try {
 			sessionFactory.getCurrentSession().delete(persistentInstance);
 			logger.log(Level.INFO, "delete successful");
@@ -73,10 +73,10 @@ public class AnexarHome {
 		}
 	}
 
-	public Anexar merge(Anexar detachedInstance) {
-		logger.log(Level.INFO, "merging Anexar instance");
+	public Convenio merge(Convenio detachedInstance) {
+		logger.log(Level.INFO, "merging Convenio instance");
 		try {
-			Anexar result = (Anexar) sessionFactory.getCurrentSession().merge(detachedInstance);
+			Convenio result = (Convenio) sessionFactory.getCurrentSession().merge(detachedInstance);
 			logger.log(Level.INFO, "merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -85,10 +85,10 @@ public class AnexarHome {
 		}
 	}
 
-	public Anexar findById(int id) {
-		logger.log(Level.INFO, "getting Anexar instance with id: " + id);
+	public Convenio findById(java.lang.String id) {
+		logger.log(Level.INFO, "getting Convenio instance with id: " + id);
 		try {
-			Anexar instance = (Anexar) sessionFactory.getCurrentSession().get("persistencia.Anexar", id);
+			Convenio instance = (Convenio) sessionFactory.getCurrentSession().get("persistencia.Convenio", id);
 			if (instance == null) {
 				logger.log(Level.INFO, "get successful, no instance found");
 			} else {
@@ -101,10 +101,10 @@ public class AnexarHome {
 		}
 	}
 
-	public List findByExample(Anexar instance) {
-		logger.log(Level.INFO, "finding Anexar instance by example");
+	public List findByExample(Convenio instance) {
+		logger.log(Level.INFO, "finding Convenio instance by example");
 		try {
-			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.Anexar")
+			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.Convenio")
 					.add(Example.create(instance)).list();
 			logger.log(Level.INFO, "find by example successful, result size: " + results.size());
 			return results;

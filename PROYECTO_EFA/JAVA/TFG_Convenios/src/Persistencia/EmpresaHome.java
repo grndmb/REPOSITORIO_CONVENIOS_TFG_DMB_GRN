@@ -1,4 +1,4 @@
-package persistencia;
+package Persistencia;
 // Generated 18 abr. 2022 17:19:32 by Hibernate Tools 5.4.32.Final
 
 import java.util.List;
@@ -10,13 +10,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Example;
 
 /**
- * Home object for domain model class Curso.
- * @see persistencia.Curso
+ * Home object for domain model class Empresa.
+ * @see Persistencia.Empresa
  * @author Hibernate Tools
  */
-public class CursoHome {
+public class EmpresaHome {
 
-	private static final Logger logger = Logger.getLogger(CursoHome.class.getName());
+	private static final Logger logger = Logger.getLogger(EmpresaHome.class.getName());
 
 	private final SessionFactory sessionFactory = getSessionFactory();
 
@@ -29,8 +29,8 @@ public class CursoHome {
 		}
 	}
 
-	public void persist(Curso transientInstance) {
-		logger.log(Level.INFO, "persisting Curso instance");
+	public void persist(Empresa transientInstance) {
+		logger.log(Level.INFO, "persisting Empresa instance");
 		try {
 			sessionFactory.getCurrentSession().persist(transientInstance);
 			logger.log(Level.INFO, "persist successful");
@@ -40,8 +40,8 @@ public class CursoHome {
 		}
 	}
 
-	public void attachDirty(Curso instance) {
-		logger.log(Level.INFO, "attaching dirty Curso instance");
+	public void attachDirty(Empresa instance) {
+		logger.log(Level.INFO, "attaching dirty Empresa instance");
 		try {
 			sessionFactory.getCurrentSession().saveOrUpdate(instance);
 			logger.log(Level.INFO, "attach successful");
@@ -51,8 +51,8 @@ public class CursoHome {
 		}
 	}
 
-	public void attachClean(Curso instance) {
-		logger.log(Level.INFO, "attaching clean Curso instance");
+	public void attachClean(Empresa instance) {
+		logger.log(Level.INFO, "attaching clean Empresa instance");
 		try {
 			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
 			logger.log(Level.INFO, "attach successful");
@@ -62,8 +62,8 @@ public class CursoHome {
 		}
 	}
 
-	public void delete(Curso persistentInstance) {
-		logger.log(Level.INFO, "deleting Curso instance");
+	public void delete(Empresa persistentInstance) {
+		logger.log(Level.INFO, "deleting Empresa instance");
 		try {
 			sessionFactory.getCurrentSession().delete(persistentInstance);
 			logger.log(Level.INFO, "delete successful");
@@ -73,10 +73,10 @@ public class CursoHome {
 		}
 	}
 
-	public Curso merge(Curso detachedInstance) {
-		logger.log(Level.INFO, "merging Curso instance");
+	public Empresa merge(Empresa detachedInstance) {
+		logger.log(Level.INFO, "merging Empresa instance");
 		try {
-			Curso result = (Curso) sessionFactory.getCurrentSession().merge(detachedInstance);
+			Empresa result = (Empresa) sessionFactory.getCurrentSession().merge(detachedInstance);
 			logger.log(Level.INFO, "merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -85,10 +85,10 @@ public class CursoHome {
 		}
 	}
 
-	public Curso findById(java.lang.String id) {
-		logger.log(Level.INFO, "getting Curso instance with id: " + id);
+	public Empresa findById(java.lang.String id) {
+		logger.log(Level.INFO, "getting Empresa instance with id: " + id);
 		try {
-			Curso instance = (Curso) sessionFactory.getCurrentSession().get("persistencia.Curso", id);
+			Empresa instance = (Empresa) sessionFactory.getCurrentSession().get("persistencia.Empresa", id);
 			if (instance == null) {
 				logger.log(Level.INFO, "get successful, no instance found");
 			} else {
@@ -101,10 +101,10 @@ public class CursoHome {
 		}
 	}
 
-	public List findByExample(Curso instance) {
-		logger.log(Level.INFO, "finding Curso instance by example");
+	public List findByExample(Empresa instance) {
+		logger.log(Level.INFO, "finding Empresa instance by example");
 		try {
-			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.Curso")
+			List results = sessionFactory.getCurrentSession().createCriteria("persistencia.Empresa")
 					.add(Example.create(instance)).list();
 			logger.log(Level.INFO, "find by example successful, result size: " + results.size());
 			return results;

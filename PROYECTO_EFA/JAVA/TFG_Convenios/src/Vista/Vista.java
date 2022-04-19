@@ -20,16 +20,16 @@ public class Vista extends JFrame {
 	private JTextField txtTelefono;
 	private JTextField txtCorreo;
 	private JTextField txtFechaNacimiento;
-	private JTextField textField_5;
-	private JTextField textField_6;
-	private JTextField textField_7;
-	private JTextField textField_8;
-	private JTextField textField_9;
+	private JTextField txtNIFUSU;
+	private JTextField txtNombreCompletoUSU;
+	private JTextField txtTelefonoUSU;
+	private JTextField txtCorreoUSU;
+	private JTextField txtFechaNacimientoUSU;
 	private JTextField txtTituloNuevoAlumno;
 	private JTextField txtNombreCursoAlumno;
 	private JTextField txtCodigoPostalAlumno;
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField txtNombreCursoUSU;
+	private JTextField txtCodigoPostalUSU;
 
 	/**
 	 * Launch the application.
@@ -90,30 +90,30 @@ public class Vista extends JFrame {
 		txtFechaNacimiento.setBounds(71, 386, 121, 51);
 		contentPane.add(txtFechaNacimiento);
 		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
-		textField_5.setBounds(243, 86, 121, 51);
-		contentPane.add(textField_5);
+		txtNIFUSU = new JTextField();
+		txtNIFUSU.setColumns(10);
+		txtNIFUSU.setBounds(243, 86, 121, 51);
+		contentPane.add(txtNIFUSU);
 		
-		textField_6 = new JTextField();
-		textField_6.setColumns(10);
-		textField_6.setBounds(243, 155, 121, 51);
-		contentPane.add(textField_6);
+		txtNombreCompletoUSU = new JTextField();
+		txtNombreCompletoUSU.setColumns(10);
+		txtNombreCompletoUSU.setBounds(243, 155, 121, 51);
+		contentPane.add(txtNombreCompletoUSU);
 		
-		textField_7 = new JTextField();
-		textField_7.setColumns(10);
-		textField_7.setBounds(243, 233, 121, 51);
-		contentPane.add(textField_7);
+		txtTelefonoUSU = new JTextField();
+		txtTelefonoUSU.setColumns(10);
+		txtTelefonoUSU.setBounds(243, 233, 121, 51);
+		contentPane.add(txtTelefonoUSU);
 		
-		textField_8 = new JTextField();
-		textField_8.setColumns(10);
-		textField_8.setBounds(243, 310, 121, 51);
-		contentPane.add(textField_8);
+		txtCorreoUSU = new JTextField();
+		txtCorreoUSU.setColumns(10);
+		txtCorreoUSU.setBounds(243, 310, 121, 51);
+		contentPane.add(txtCorreoUSU);
 		
-		textField_9 = new JTextField();
-		textField_9.setColumns(10);
-		textField_9.setBounds(243, 386, 121, 51);
-		contentPane.add(textField_9);
+		txtFechaNacimientoUSU = new JTextField();
+		txtFechaNacimientoUSU.setColumns(10);
+		txtFechaNacimientoUSU.setBounds(243, 386, 121, 51);
+		contentPane.add(txtFechaNacimientoUSU);
 		
 		txtTituloNuevoAlumno = new JTextField();
 		txtTituloNuevoAlumno.setFont(new Font("Tahoma", Font.BOLD, 24));
@@ -134,14 +134,14 @@ public class Vista extends JFrame {
 		txtCodigoPostalAlumno.setBounds(71, 537, 121, 51);
 		contentPane.add(txtCodigoPostalAlumno);
 		
-		textField = new JTextField();
-		textField.setColumns(10);
-		textField.setBounds(243, 460, 121, 51);
-		contentPane.add(textField);
+		txtNombreCursoUSU = new JTextField();
+		txtNombreCursoUSU.setColumns(10);
+		txtNombreCursoUSU.setBounds(243, 460, 121, 51);
+		contentPane.add(txtNombreCursoUSU);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(243, 537, 121, 51);
-		contentPane.add(textField_1);
+		txtCodigoPostalUSU = new JTextField();
+		txtCodigoPostalUSU.setColumns(10);
+		txtCodigoPostalUSU.setBounds(243, 537, 121, 51);
+		contentPane.add(txtCodigoPostalUSU);
 	}
 }

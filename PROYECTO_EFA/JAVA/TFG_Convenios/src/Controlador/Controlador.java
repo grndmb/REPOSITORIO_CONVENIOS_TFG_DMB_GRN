@@ -1,6 +1,23 @@
 package Controlador;
-public class Controlador {
-	public static void main (String [] args) {
-		System.out.println("HOLAS DAGAOPU9IXVJKDSLVDWBVFDSBFDN");
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import Vista.Vista;
+
+public class Controlador implements ActionListener{
+	//Objetos && Variables
+	Vista vista = new Vista();
+	
+	//Constructor
+	public Controlador(Vista v) {
+		this.vista = v;
+	}
+
+	//Controlador de eventos
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
 	}
 }

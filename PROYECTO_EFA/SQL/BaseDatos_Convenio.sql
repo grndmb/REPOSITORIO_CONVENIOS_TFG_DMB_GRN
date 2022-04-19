@@ -56,7 +56,6 @@ TELEFONO INT NOT NULL COMMENT 'Telefono del alumno',
 CORREO VARCHAR(100) NOT NULL COMMENT 'Correo del alumno',
 FECHA_NACIMIENTO DATE NOT NULL COMMENT 'Fecha de nacimiento del alumno',
 
-ID_PRACTICA INT NOT NULL COMMENT 'Identificador de las practicas',
 NOMBRE_CURSO VARCHAR(200) NOT NULL COMMENT 'Identificador del curso',
 CODIGO_POSTAL INT NOT NULL COMMENT 'Codigo postal de la poblacion',
 
